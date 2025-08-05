@@ -1,0 +1,13 @@
+
+[
+  {
+    "id": "msg_001",
+    "from_user_id": "user_002",
+    "to_user_id": "user_001",
+    "subject": "Inquiry about Mathematics Tutoring",
+    "message": "Hello Mrs. Okafor, I'm interested in your mathematics tutoring services for my 10-year-old daughter. Could we schedule a discussion?",
+    "timestamp": "2024-01-25 09:15:00",
+    "read": false,
+    "replied": false
+  }
+]

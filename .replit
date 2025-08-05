@@ -12,3 +12,15 @@ deploymentTarget = "cloudrun"
 [[ports]]
 localPort = 8000
 externalPort = 80
+
+[workflows]
+runButton = "Run ClassDiaspora"
+
+[[workflows.workflow]]
+name = "Run ClassDiaspora"
+author = 46010493
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "php -S 0.0.0.0:8000 -t ."
