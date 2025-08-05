@@ -1,0 +1,63 @@
+Based on the provided knowledge base and web content file, Align with:
+•    Use of .json for storage instead of MySQL database
+•    Tailwind CSS instead of Bootstrap
+•    Lightweight PHP (no frameworks)
+•    Mobile-first and responsive design principles
+•    Features supporting a parent-teacher connection platform
+Design a PWA MVP Web App for a teacher-parent education platform using native PHP, Tailwind CSS, Ajax, and .json files for data storage.
+Keep the interface lightweight, mobile-first, and fully responsive.
+🎨 Visual/Layout Requirements:
+•    Enforce max-width of 680px on large screens
+•    Use a deep/burnt blue theme with reusable CSS via Tailwind classes
+•    Include bottom footer icons for quick actions
+•    Integrate Font Awesome for icons
+🧱 Pages to Implement:
+•    index.php – Splash screen & landing
+•    welcome.php – Entry screen with CTA to login or register
+•    login.php – Login form with validation
+•    register.php – Registration form (teacher or parent)
+•    logout.php – Logout and session destroy
+•    dashboard.php – After-login page with role-specific view
+•    profile.php – View or edit user profile
+•    quick-actions.php – Icon panel (e.g., View Teachers, Contact Requests, Upload Curriculum)
+🔑 Core Features:
+•    ✅ Simple auth flow using PHP sessions
+•    ✅ Use .json files to store and retrieve data (e.g., users, messages, curriculum)
+•    ✅ Working forms (login, registration, profile update) with client + server validation
+•    ✅ Modular layout using header.php, footer.php, navbar.php
+•    ✅ Use SweetAlert for success/error alerts
+•    ✅ Animate elements using AOS (Animate on Scroll)
+•    ✅ Integrate PWA essentials (manifest.json + service worker)
+📁 Sample Files Required:
+Please generate working PHP + HTML files:
+📁 /
+├── index.php
+├── welcome.php
+├── login.php
+├── logout.php
+├── register.php
+├── dashboard.php
+├── profile.php
+├── quick-actions.php
+├── manifest.json
+├── sw.js
+├── /assets/
+│   ├── tailwind.min.css
+│   ├── main.js
+│   └── icons/
+├── /data/
+│   ├── users.json
+│   ├── messages.json
+│   └── curriculum.json
+├── /includes/
+│   ├── header.php
+│   ├── footer.php
+│   ├── auth.php
+│   └── helpers.php
+💡 Summary
+•    PHP (no DB): Backend logic with .json as storage
+•    Tailwind CSS: For modern, utility-first responsive styling
+•    Ajax/JS: For dynamic UI interactivity
+•    PWA-ready: manifest & service worker setup
+•    Icons & Animations: Font Awesome + AOS
+•    Real use case: Online platform for Nigerian teachers & diaspora parents
