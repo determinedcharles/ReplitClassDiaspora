@@ -32,13 +32,13 @@ $role = $_SESSION['user_role'];
         <?php if ($role === 'teacher'): ?>
             <!-- Teacher Quick Actions -->
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <button class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                <button onclick="window.location.href='curriculum.php'" class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
                     <i class="fas fa-upload text-3xl text-blue-600 mb-3"></i>
                     <h3 class="font-semibold text-gray-800">Upload Content</h3>
                     <p class="text-sm text-gray-600 mt-1">Add learning materials</p>
                 </button>
 
-                <button class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                <button onclick="window.location.href='students.php'" class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
                     <i class="fas fa-users text-3xl text-green-600 mb-3"></i>
                     <h3 class="font-semibold text-gray-800">View Students</h3>
                     <p class="text-sm text-gray-600 mt-1">Manage your classes</p>
@@ -56,7 +56,7 @@ $role = $_SESSION['user_role'];
                     <p class="text-sm text-gray-600 mt-1">Track progress</p>
                 </button>
 
-                <button class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                <button onclick="window.location.href='messages.php'" class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
                     <i class="fas fa-comments text-3xl text-red-600 mb-3"></i>
                     <h3 class="font-semibold text-gray-800">Messages</h3>
                     <p class="text-sm text-gray-600 mt-1">Parent communication</p>
@@ -72,19 +72,19 @@ $role = $_SESSION['user_role'];
         <?php else: ?>
             <!-- Parent Quick Actions -->
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <button class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                <button onclick="window.location.href='browse-teachers.php'" class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
                     <i class="fas fa-search text-3xl text-blue-600 mb-3"></i>
                     <h3 class="font-semibold text-gray-800">Find Teachers</h3>
                     <p class="text-sm text-gray-600 mt-1">Browse qualified educators</p>
                 </button>
 
-                <button class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                <button onclick="window.location.href='messages.php'" class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
                     <i class="fas fa-envelope text-3xl text-green-600 mb-3"></i>
                     <h3 class="font-semibold text-gray-800">Contact Request</h3>
                     <p class="text-sm text-gray-600 mt-1">Reach out to teachers</p>
                 </button>
 
-                <button class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+                <button onclick="window.location.href='curriculum.php'" class="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
                     <i class="fas fa-book text-3xl text-purple-600 mb-3"></i>
                     <h3 class="font-semibold text-gray-800">Curriculum</h3>
                     <p class="text-sm text-gray-600 mt-1">View learning materials</p>
